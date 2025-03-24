@@ -1,0 +1,25 @@
+Metadata-Version: 2.4
+Name: financial-advisor-chatbot
+Version: 0.1.0
+Summary: Multi-Modal Financial Advisor Chatbot
+Author: Financial Advisor Team
+Author-email: team@example.com
+Requires-Python: >=3.8
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Requires-Dist: pymongo
+Requires-Dist: motor
+Requires-Dist: python-dotenv
+Requires-Dist: pydantic
+Requires-Dist: pydantic-settings
+Requires-Dist: openai
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: python-jose
+Requires-Dist: passlib
+Requires-Dist: python-multipart
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary

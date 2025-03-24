@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+pymongo
+motor
+python-dotenv
+pydantic
+pydantic-settings
+openai
+pandas
+numpy
+python-jose
+passlib
+python-multipart

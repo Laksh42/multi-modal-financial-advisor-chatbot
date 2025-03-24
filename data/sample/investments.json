@@ -1,0 +1,12 @@
+{
+  "investments": [
+    {
+      "user_id": "1",
+      "investment_id": 1,
+      "investment_type": "stocks",
+      "amount": 5000.00,
+      "current_value": 5500.00,
+      "start_date": "2023-01-15"
+    }
+  ]
+}

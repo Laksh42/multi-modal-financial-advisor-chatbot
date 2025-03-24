@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Advisor Chatbot</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Financial Advisor Chatbot</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" id="logout-btn" class="hidden">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Login Page -->
+        <div id="login-page" class="auth-form">
+            <h2>Login</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-userid">User ID</label>
+                    <input type="text" id="login-userid" name="userid" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" name="password" required>
+                </div>
+                <div id="login-error" class="error-message hidden"></div>
+                <button type="submit" class="btn btn-block">Login</button>
+            </form>
+            <div class="auth-links">
+                <p>Don't have an account? <a href="#" id="register-link">Register</a></p>
+            </div>
+        </div>
+
+        <!-- Register Page -->
+        <div id="register-page" class="auth-form hidden">
+            <h2>Register</h2>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="register-userid">User ID</label>
+                    <input type="text" id="register-userid" name="userid" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-password">Password</label>
+                    <input type="password" id="register-password" name="password" required>
+                </div>
+                <div id="register-error" class="error-message hidden"></div>
+                <button type="submit" class="btn btn-block">Register</button>
+            </form>
+            <div class="auth-links">
+                <p>Already have an account? <a href="#" id="login-link">Login</a></p>
+            </div>
+        </div>
+
+        <!-- Chat Page -->
+        <div id="chat-page" class="hidden">
+            <div class="chat-container">
+                <!-- Financial Recommendations Section -->
+                <div class="recommendations">
+                    <h2>Recommended Financial Products</h2>
+                    <div id="recommendations">
+                        <p>Loading recommendations...</p>
+                    </div>
+                </div>
+
+                <!-- Chat Section -->
+                <div class="chat-main">
+                    <div class="chat-header">
+                        <h2>Financial Advisor</h2>
+                    </div>
+                    <div class="messages" id="messages">
+                        <!-- Messages will be added here dynamically -->
+                    </div>
+                    <form id="chat-form" class="chat-form">
+                        <input type="text" id="chat-input" class="chat-input" placeholder="Type your message..." required>
+                        <button type="submit" class="btn send-btn">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Financial Advisor Chatbot</p>
+        </div>
+    </footer>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html> 

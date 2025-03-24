@@ -1,0 +1,3 @@
+user_id,investment_id,investment_type,amount,current_value,start_date
+4,1,stocks,6068.87,5557.05,2025-03-03
+9,2,etfs,4643.9,4377.02,2024-11-06
